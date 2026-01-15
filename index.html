@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Midterm Grade Calculator</h1>
+    <form method="POST">
+        <label>First grade: </label><input type="number" name="a" required><br><br>
+        <label>Second grade: </label><input type="number" name="b" required><br><br>
+        <label>Third grade: </label><input type="number" name="c" required><br><br>
+        <label>Personal work grade: </label><input type="number" name="d" required><br><br>
+        <label>Continuity grade: </label><input type="number" name="e" required><br><br>
+        <label>Final grade: </label><input type="number" name="f" required><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
